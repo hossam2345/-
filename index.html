@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>questions</title>
+    <style>
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+#main,#main2,#main3,#main4,#main5,#main6,#main7,#main8,#main9,#main10{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(89, 0, 172);
+    text-align: center;
+    
+border-radius: 15px;
+}
+.quest{
+width: 230px;
+text-wrap-mode: nowrap;
+position: relative;
+top: 80px;
+background-color: darkviolet;
+border: none;
+border-radius: 7px;
+transition: 0.5s;
+color: white;
+}
+.quest:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transform: scale(1.08);
+}
+.ha,.ha2,.ha3,.ha4,.ha5,.ha6,.ha7,.ha8,.ha9,.ha10{
+    position: relative;
+    top: 40px;
+    color: white;
+}
+.ha4{
+    position: relative;
+    top: 20px;
+}
+#next,#next2,#next3{
+
+    display: none; position: relative; left: 50px; background-color: darkviolet;
+border: none;
+border-radius: 7px;
+transition: 0.5s;
+color: white;
+}
+#next2{
+    position: relative;
+    left: 40px;
+}
+#next:hover,#next2:hover,#next3:hover,#next4:hover,#next5:hover,#next6:hover,#next7:hover,#next8:hover,#next9:hover,#previous:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.08);
+}
+#next2,#next3,#next4,#next5,#next6,#next7,#next8,#next9,#previous{
+    display: none;  background-color: darkviolet;
+    position: relative; 
+    right: 50px;
+    width: fit-content;
+    position: relative;
+    left:-100px;
+border: none;
+border-radius: 7px;
+transition: 0.5s;
+color: white;
+}
+#previous{
+    position: relative;
+    left: 130px;
+}
+#a4,#b4,#c4,#d4{
+    width: 200px;
+    position: relative;
+    top:75px
+}
+.po{
+    width: 200px;
+    border: 3.5px black double;
+}
+    </style>
+</head>
+<body>
+<div id="main">
+<h2 class="ha">who win the UCL in 2020</h2>
+<button class="quest" id="a">Psg</button>
+<button class="quest" id="b">Bayern Munich</button>
+<br>
+<button class="quest" id="c">Man City</button>
+<button class="quest" id="d">Barcelona</button>
+
+</div>
+<div style="display: block;">
+    <h2 id="right" style="display: none;">correct answer</h2>
+<h2 id="false" style="display: none;">wrong answer</h2>
+<br>
+<button id="next">next</button>
+</div>
+<div id="main2" style="display: none;">
+<h2 class="ha2">who win the Ballon'dor 2005?</h2>
+<button class="quest" id="a2">Kaka</button>
+<button class="quest" id="b2">T.Henry</button>
+<button class="quest" id="c2">F.Torres</button>
+<button class="quest" id="d2">Ronaldinho</button>
+</div>
+<div id="main3" style="display: none;">
+<h2 class="ha3">who was third in Wc 2014</h2>
+<button class="quest" id="a3">Brazil</button>
+<button class="quest" id="b3">Germany</button>
+<button class="quest" id="c3">Netherlands</button>
+<button class="quest" id="d3">Uruguay</button>
+</div>
+<button id="next2" class="quest" style="display: none;">next</button>
+<button class="quest" id="next3" style="display: none;">next</button>
+<div id="main4" style="display: none;">
+    <h2 class="ha4">who scored the most Free Kicks in History</h2>
+    <button class="quest" id="a4">L.Messi</button>
+    <button class="quest" id="b4">J.ward-prowse</button>
+    <button class="quest" id="c4">Juninho</button>
+    <button class="quest" id="d4">C.Ronaldo</button>
+</div>
+<button class="quest" id="next4" style="display: none;">next</button>
+<div id="main5" style="display: none;">
+ <h2 class="ha5">the first Premier Legue Winner?</h2> 
+<button class="quest" id="a5">preston north end</button>
+<button class="quest" id="b5">Liverpool</button>
+<button class="quest" id="c5">Southampton</button>
+<button class="quest" id="d5">Aston Villa</button>
+</div>
+<button class="quest" id="next5">next</button>
+<div id="main6" style="display: none;">
+<h2 class="ha6">who is tha all time goalscorer in WC history</h2>
+<button class="quest" id="a6">L.Messi</button>
+<button class="quest" id="b6">K.Mpabbe</button>
+<button class="quest" id="c6">M.Klose</button>
+<button class="quest" id="d6">Pele</button>
+</div>
+<button class="quest" id="next6" style="display: none;">next</button>
+<div id="main7" style="display: none;">
+    <h2 class="ha7">the oldest club in Egypt(it may not a fc)</h2>
+    <button id="a7" class="quest">Elseka Elhadeed</button>
+    <button id="b7"  class="quest">Alahly</button>
+    <button id="c7"  class="quest">Eltersana</button>
+    <button id="d7"  class="quest">sporting club</button>
+</div>
+<button class="quest" id="next7" style="display: none;">next</button>
+<div id="main8" style="display: none;">
+<h2 class="ha8">who was the runner-up in UCL 2004</h2>
+<button class="quest" id="a8">Porto fc</button>
+<button class="quest" id="b8">Monaco fc</button>
+<button class="quest" id="c8">Real Madrid</button>
+<button class="quest" id="d8">Ac Milan</button>
+</div>
+<button class="quest" id="next8" style="display: none;">next</button>
+<div id="main9" style="display: none;">
+<h2 class="ha9">the team with the most Europe Legue Titles</h2>
+<button class="quest" id="a9">Sevilla</button>
+<button class="quest" id="b9">Atletico Madrid</button>
+<button class="quest" id="c9">Inter Milan</button>
+<button class="quest" id="d9">Juventus</button>
+</div>
+<button class="quest" id="next9" style="display: none;">next</button>
+<div id="main10" style="display: none;">
+    <h2 class="ha10">what Team do you support?</h2>
+    <button class="quest" id="a10">Real Madrid</button>
+    <button class="quest" id="b10">Zamalek</button>
+    <button class="quest" id="c10">Barcelona</button>
+    <button class="quest" id="d10">Alahly</button>
+</div>
+<button id="previous" class="quest" style="display: none;">previous</button>
+<img src="images (4).jpeg" alt="8-2" class="po" id="img1" style="display: none;">
+<img src="images (5).jpeg" alt="6-1" class="po" id="img2"  style="display: none;">
+<img src="images (6).jpeg" alt="5-0" class="po" id="img3"  style="display: none;">
+<img src="images (7).jpeg" alt="6-1" class="po" id="img4"  style="display: none;">
+<script src="main.js"></script>
+</body>
+</html>
